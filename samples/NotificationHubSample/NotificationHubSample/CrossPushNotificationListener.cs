@@ -27,7 +27,7 @@ namespace NotificationHubSample
         {
             Debug.WriteLine("OnRegistered: {0}, deviceType: {1}", token, deviceType);
             CrossNotificationHub.Current.Register(Constants.NOTIFICATION_HUB_CONNECTION_STRING,
-                Constants.NOTIFICATION_HUB_NAME, token, new string[] { "TEST" });
+                Constants.NOTIFICATION_HUB_NAME, token, "TEST");
         }
 
         public void OnUnregistered(DeviceType deviceType)
